@@ -2,6 +2,9 @@
 
 This project reproduces the core pipeline of the paper *A Pilot Study of Query-Free Adversarial Attack against Stable Diffusion*.  
 
+The main idea is to optimize adversarial prompt suffixes in CLIP text-embedding space and evaluate if these perturbations can shift the generated outputs of Stable Diffusion.
+
+
 ## Visual Examples
 
 ### Example outputs
@@ -13,8 +16,6 @@ This project reproduces the core pipeline of the paper *A Pilot Study of Query-F
 
 These examples show that small prompt perturbations can lead to changes in generated outputs, including shifts in style, composition, and semantic details. While the core object category is often preserved, the resulting images may drift toward different visual interpretations.
 
-
-The main idea is to optimize adversarial prompt suffixes in CLIP text-embedding space and evaluate if these perturbations can shift the generated outputs of Stable Diffusion.
 
 ## Objective
 
