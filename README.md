@@ -6,7 +6,7 @@ The main idea is to optimize adversarial prompt suffixes in CLIP text-embedding 
 ## Objective
 
 The goal of this project is to reproduce the query-free adversarial attack pipeline and analyze how optimized prompt perturbations affect image-text semantic alignment.  
-In addition to the main attack settings, this project also includes a small-scale comparison with a random five-character baseline. :contentReference[oaicite:1]{index=1}
+In addition to the main attack settings, this project also includes a small-scale comparison with a random five-character baseline. 
 
 ## Experimental Setup
 
@@ -21,7 +21,7 @@ In addition to the main attack settings, this project also includes a small-scal
   - `a white swan on a lake`  
   - `a black bicycle against a brick wall`  
 - **Metric:** CLIP score between the generated image and the original prompt  
-  - Lower CLIP score indicates a stronger attack effect. :contentReference[oaicite:2]{index=2}
+  - Lower CLIP score indicates a stronger attack effect. 
 
 ## Results Summary
 
@@ -33,7 +33,7 @@ In the small-scale experiment:
 - **No Attack** was **0.2659**
 - **Random** performed worst with **0.2683**
 
-These results support the main claim that optimized perturbations are more effective than arbitrary random corruption. :contentReference[oaicite:3]{index=3}
+These results support the main claim that optimized perturbations are more effective than arbitrary random corruption.
 
 ### Prompt-level observations
 
@@ -42,7 +42,7 @@ These results support the main claim that optimized perturbations are more effec
 - Random never produced the lowest CLIP score.
 - The strongest attack effect appeared on:
   - **`a black bicycle against a brick wall`**
-- The prompt **`a snake and a young man`** also showed a clear semantic shift under optimized perturbations. :contentReference[oaicite:4]{index=4}
+- The prompt **`a snake and a young man`** also showed a clear semantic shift under optimized perturbations. 
 
 ## Files
 
@@ -52,8 +52,7 @@ These results support the main claim that optimized perturbations are more effec
 ## Conclusion
 
 This reproduction supports the safety insight that weaknesses in the CLIP text encoder can propagate into downstream image generation.  
-It suggests that vulnerabilities in one component of a multimodal system may transfer to later generation stages. :contentReference[oaicite:5]{index=5}
-
+It suggests that vulnerabilities in one component of a multimodal system may transfer to later generation stages. 
 ## Author
 
 Yi-Shan Lan
