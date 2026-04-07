@@ -1,6 +1,19 @@
 # A Reproduction and Analysis of Query-Free Adversarial Attack Against Stable Diffusion
 
 This project reproduces the core pipeline of the paper *A Pilot Study of Query-Free Adversarial Attack against Stable Diffusion*.  
+
+## Visual Examples
+
+### Example outputs
+![Qualitative results 1](images/qf_attack_results_1.png)
+
+![Qualitative results 2](images/qf_attack_results_2.png)
+
+
+
+These examples show that optimized query-free perturbations can shift the generated image semantics away from the original prompt, while random perturbations are less consistently effective.
+
+
 The main idea is to optimize adversarial prompt suffixes in CLIP text-embedding space and evaluate if these perturbations can shift the generated outputs of Stable Diffusion.
 
 ## Objective
